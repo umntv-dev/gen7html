@@ -1,14 +1,23 @@
 * {
     font-family: montserrat;
+    
 }
 
 body {
-    
     display: inline-block;
-    padding: 0;
+    padding: 0%;
     background-image: url(img/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
+}
+
+.body {
+    display: inline-block;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
 }
     
 .navbar {
@@ -159,12 +168,92 @@ body {
     flex-wrap: wrap;
 }
 
+
+/* Program Card */
+
+.cardprog {
+    background: linear-gradient(180deg, #C73A26 85%, #C73A26 100%);
+    box-shadow: 5px 6px 15px #313131;
+    border-radius: 36px;
+    position: relative;
+}
+
+.cardprog img {
+    border-radius: 36px;
+    transform: scale(0.97) translateY(-35px);
+    box-shadow: 0px 4px 17px 5px rgba(32, 32, 32, 0.5);
+    transition: 0.8s;
+}
+
+.card-detail {
+    color: white;
+    text-align: center;
+    /* font-weight: bold; */
+    position: absolute;
+    opacity: 0;
+    margin: 50px 50px 10px;
+    transition: opacity 0.5s linear;
+}
+
+.cardprog:hover .programImg {
+    transform: scale(0) rotate(540deg);
+}
+  
+.cardprog:hover .card-detail {
+    opacity: 1;
+    color: white;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.cardTitle {
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-shadow: 4px 4px 10px black;
+}
+  
+.cardInfo {
+    font-size: 18px;
+    text-shadow: 4px 4px 10px black;
+    text-align: justify;
+}
+
+.watch-btn {
+    background: #133743;
+    box-shadow: 1px 1px 17px 2px #07A3A3;
+    border-radius: 18px;
+    font-weight: bold;
+    padding: 2px 60px;
+    margin: 0;
+    font-size: 1.5em;
+    color: #dfdfdf;
+    transition: 0.3s;
+    transform: translateY(-20px);
+  }
+  
+.watch-btn:hover {
+    box-shadow: 1px 1px 17px 6px #07A3A3;
+    color: white;
+}
+  
+.cardprog:hover .watch-btn {
+    transform: scale(1.05) translateY(-60px);
+}
+
+.col {
+    padding: 60px;
+}
+
+/* end of program */
+
 footer {
     background-color: #2F2F2F;
     display: inline-block;
     padding-top: 10px;
     width: 100%;
     color: white;
+    bottom: 0; 
+    position: relative;
 }
 
 
@@ -173,7 +262,7 @@ footer {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    margin-left: 6px;
+    /*margin-left: 6px;*/
     margin-right: 0;
     border-radius: 100%;
     background-color: #33353d;
@@ -251,3 +340,22 @@ footer {
     color: #DCDCDC;
 }
 
+
+.bg-home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background-image: url('/public/images/web-landing.png?40d5a51a772f63004192344be2470bb6');*/
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position-y: -2px;
+    overflow: hidden;
+}
+
+.tv {
+    width: 60%;
+    align-items: center;
+}
