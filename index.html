@@ -23,6 +23,10 @@
 
     <script src="https://kit.fontawesome.com/2d31a0f03c.js" crossorigin="anonymous"></script>
     
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body style="padding: 0%; display: inline-block;">
@@ -56,6 +60,39 @@
     </nav>
 
     <div class="container-sm">
+        <div class="row">
+            <br><br>
+        </div>
+        <div class="row">
+            <br><br>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/poster/mersi.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/poster/kulik.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/poster/sanantara.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/poster/pepox.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/poster/karena.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/poster/lbs.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/poster/aad.png">
+                    </div>                
+                </div>
+            </div>
+        </div>
         <div class="row">
             <br><br>
         </div>
@@ -138,16 +175,16 @@
                             <li><a class="facebook" href="https://www.facebook.com/officialumntv"><i class="fa fa-facebook"></i></a></li>
                         </p>
                         <p>
-                            <li><a class="twitter" href="https://www.facebook.com/officialumntv"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="twitter" href="https://www.twitter.com/officialumntv"><i class="fa fa-twitter"></i></a></li>
                         </p>
                         <p>
-                            <li><a class="instagram" href="https://www.facebook.com/officialumntv"><i class="fa fa-instagram"></i></a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/officialumntv"><i class="fa fa-instagram"></i></a></li>
                         </p>
                         <p>
                             <li><a class="tiktok" href="https://www.facebook.com/officialumntv"><i class="fab fa-tiktok"></i></a></li>
                         </p>
                         <p>
-                            <li><a class="linkedin" href="https://www.facebook.com/officialumntv"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/company/umn-tv/"><i class="fa fa-linkedin"></i></a></li>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -189,6 +226,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="undefined" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause:true,
+        stagePadding: 50,
+        dots: false,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+    });
+    </script>
 </body>
 
 </html>
