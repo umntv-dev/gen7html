@@ -12,7 +12,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
 
         <!--Bootstrap CSS-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">-->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
         <!--Montserrat Font-->
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -26,15 +29,31 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!--AOS Library-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <style>
+            .watch-btn {
+                background-color: #C73A26;
+                color: white;
+                border-radius: 20px;
+            }
+
+            .watch-btn:hover {
+                color: white;
+            }
+        </style>
+
     </head>
     <body class="body">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top sticky">
-            <div class="container">
-                <a class="navbar-brand mr-5" href="#"><img src="img/umntv.png" alt="UMN TV LOGO" class="img-fluid" id="logo"></a>
+            <div class="container-md">
+                <a class="navbar-brand mr" href="#"><img src="img/umntv.png" alt="UMN TV LOGO" class="img-fluid" id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 px-5">
                         <li class="nav-item active">
@@ -50,21 +69,27 @@
                             <a class="nav-link " href="about.html">About</a>
                         </li>
                     </ul>
-    
                 </div>
             </div>
         </nav>
-        <div class="row">
+        <div>
             <br><br>
         </div>
-        <div class="row">
-            <br><br>
+        
+        
+
+        <div data-aos="fade-up" class="container titleContent" id="program">
+            <h1 class="mainTitle">Programs</h1>
+            <p class="titleInfo">
+                <span id="title1">New Season</span> with Brand New Episodes
+            </p>
         </div>
+
         <!-- Program Card -->
-        <div class="container" >
+        <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                    <div class="cardprog">
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
                         <img src="img/poster/mersi.jpg" class="card-img-top programImg" >
                         <div class="card-detail">
                             <h3 class="cardTitle">Meja Redaksi</h3>
@@ -80,8 +105,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="cardprog">
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
                         <img src="img/poster/sanantara.jpg" class="card-img-top programImg" alt="backbeat">
                         <div class="card-detail">
                             <h3 class="cardTitle">Sanantara</h3>
@@ -94,14 +119,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="cardprog">
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
                         <img src="img/poster/pepox.jpg" class="card-img-top programImg" alt="meja-redaksi">
                         <div class="card-detail">
                             <!--<h3 class="cardTitle hide">Pepox</h3>-->
                             <p class="cardInfo">Halo, mari berdiskusi. Apakah timun adalah buah atau  sayur? Mungkinkah bumi benar-benar bulat? Apakah kamu tim bubur diaduk? Kalau iya kenapa? <br>
     Pepox menjadi wadah untuk kalian berdiskusi tentang apa pun. Kami mengundang  banyak orang dari berbagai latar belakang untuk berpendapat tentang opini yang kalian punya tentang berbagai topik. Jadi, mari berdiskusi!
-
+    
                             </p>
                         </div>
                         <div class="text-center">
@@ -110,8 +135,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="cardprog">
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
                         <img src="img/poster/karena.jpg" class="card-img-top programImg" alt="westyle">
                         <div class="card-detail">
                             <h3 class="cardTitle">K-Arena</h3>
@@ -124,41 +149,90 @@
                         </div>
                     </div>
                 </div>
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
+                        <img src="img/poster/kulik.jpg" class="card-img-top programImg" alt="westyle">
+                        <div class="card-detail">
+                            <h3 class="cardTitle">Kulik kulik</h3>
+                            <p class="cardInfo">Halo, Kulikers! Kali ini, Kulik-Kulik kembali hadir untuk menyajikan konten inspiratif dan juga mengedukasi tentang literasi sosial. Ditemani Ratujesya Akira, Kulik-Kulik akan membuat Jumat malam kalian penuh makna, lho! 
+    
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn watch-btn" href="https://www.youtube.com/watch?v=zZ48bkRtg6c"><i class="fa fa-play-circle"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
+                        <img src="img/poster/aad.png" class="card-img-top programImg" alt="westyle">
+                        <div class="card-detail">
+                            <h3 class="cardTitle">Ada apa dengan</h3>
+                            <p class="cardInfo">CCP kembali hadir dengan konten yang pasti menjawab rasa penasaran kalian, loh! Kali ini, CCP akan menyajikan konten seputar trending topic dari Twitter yang dikemas dengan aktual dan kreatif. Jangan sampai kelewatan, Tweeples! 
+    
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn watch-btn" href="https://www.instagram.com/officialumntv/"><i class="fa fa-play-circle"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="program-card" data-aos="fade-up">
+                        <img src="img/poster/lbs.png" class="card-img-top programImg" alt="westyle">
+                        <div class="card-detail">
+                            <h3 class="cardTitle">Let's be Smart</h3>
+                            <p class="cardInfo">CCP datang membawakan program yang lebih menarik lagi dengan konten informatif dan edukatif seputar hal-hal yang jarang diketahui banyak orang, loh! Yuk tambah pengetahuanmu dengan memantau terus konten CCP!  
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn watch-btn" href="https://www.instagram.com/officialumntv/"><i class="fa fa-play-circle"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
+        
+        <div class="container">
+            <div class="text-center" style="padding: 10px;">
+                <a class="btn watch-btn" style="padding: 10px;" href="https://www.youtube.com/channel/UC2I_6GJyyXHzVzuXvp9IsfA"> <i class="fa fa-youtube"></i> More On YouTube
+                </a>
+            </div>
+        </div>
+
         <!-- Footer -->
-        <footer class="text-lg-start ">
+        <footer class="text-lg-start">
             <!-- Section: Links  -->
-            <section class="">
+            <section>
                 <div class="container text-md-start mt-5">
                     <!-- Grid row -->
-                    <div class="row mt-3">
-                        <!-- Grid column -->
-                        
-                        <!-- Grid column -->
-        
+                    <div class="row mt-3">    
                         <!-- Grid column -->
                         <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4 social-icons">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
                                 Follow our Social Media
                             </h6>
-                            <a class="facebook" href="https://www.facebook.com/officialumntv">
+                            <a class="facebook" href="https://www.facebook.com/officialumntv" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
-                            <a class="twitter" href="https://www.twitter.com/officialumntv">
+                            <a class="twitter" href="https://www.twitter.com/officialumntv" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a class="instagram" href="https://www.instagram.com/officialumntv">
+                            <a class="instagram" href="https://www.instagram.com/officialumntv" target="_blank">
                                 <i class="fa fa-instagram"></i>
                             </a>
-                            <a class="tiktok" href="https://www.facebook.com/officialumntv">
+                            <a class="tiktok" href="https://www.tiktok.com/@officialumntv?" target="_blank">
                                 <i class="fab fa-tiktok"></i>
                             </a>
-                            <a class="linkedin" href="https://www.linkedin.com/company/umn-tv/">
+                            <a class="linkedin" href="https://www.linkedin.com/company/umn-tv/" target="_blank">
                                 <i class="fa fa-linkedin"></i>
                             </a>
+                            
                         </div>
                         <!-- Grid column -->
         
@@ -171,8 +245,8 @@
                                     <i ></i>Contact Us
                                 </h6>
                                 <p>
-                                    marketing.tv@umn.ac.id<br>
-                                    LINE OA: @umntv
+                                    <a href="mailto:marketing.tv@umn.ac.id">marketing.tv@umn.ac.id</a><br>
+                                    LINE: <a href="https://page.line.me/?accountId=umntv&openerPlatform=native&openerKey=home%3Arecommend" target="_blank">@umntv</a>
                                 </p><br>
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     <i ></i>Address
@@ -190,10 +264,17 @@
     
         <!-- Copyright -->
         <div class=" p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            <p class="container">Copyright ©2021 | Managed by IT & Web Deptartement of UMN TV <span style="margin-left: auto;"><a href="#">Back to Top</a></span></p>
+            <div class="container" style="display: flex;">
+                <p >Copyright ©2021 | Managed by IT & Web Deptartement of UMN TV </p>
+                <a style="text-align: right; margin-left: auto;" href="#">Back to Top</a>
+            </div>
         </div>
         <!-- Copyright -->
         </footer>
         <!-- Footer -->
+
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
