@@ -1,6 +1,5 @@
 * {
     font-family: montserrat;
-    
 }
 
 body {
@@ -19,17 +18,17 @@ body {
 a {
     text-decoration: none;
 }
-    
+
 .navbar {
     background-color: #2F2F2F;
     font-weight: bolder;
 }
-    
+
 .navbar-nav {
     text-align: center;
     margin: auto;
 }
-    
+
 .nav-link {
     font-style: normal;
     font-weight: bold;
@@ -39,16 +38,35 @@ a {
     color: #ffffff;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-    
+
+.yt {
+    position: relative;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    display: inline-block;
+}
+
+.yt:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: attr(filter-content);
+    filter: url(#motion-blur-filter);
+}
+
 #logo {
     max-width: 120px;
     height: auto;
 }
-    
+
 img {
     width: 100%;
 }
-    
+
 body {
     width: 100%;
     height: 100vh;
@@ -78,7 +96,7 @@ body {
     align-items: center;
     border-radius: 36px;
 }
-    
+
 .blog-post__img {
     min-width: 35rem;
     max-width: 35rem;
@@ -86,7 +104,7 @@ body {
     transform: translateX(-8rem);
     position: relative;
 }
-    
+
 .blog-post__img img {
     width: 100%;
     height: 100%;
@@ -94,7 +112,7 @@ body {
     display: block;
     border-radius: .8rem;
 }
-    
+
 .blog-post__img::before {
     content: '';
     width: 100%;
@@ -113,13 +131,13 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
-    
+
 .blog-post__text {
     margin-bottom: 3rem;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, .7);
 }
-    
+
 .blog-post__cta {
     display: inline-block;
     padding: .75rem 2rem;
@@ -131,12 +149,12 @@ body {
     border-radius: 1.5rem;
     text-decoration: none;
 }
-    
+
 .blog-post__cta:hover {
     background-image: linear-gradient(to right, #86271a 0%, #86271a 100%);
     color: white;
 }
-    
+
 @media screen and (max-width: 1068px) {
     .blog-post {
         max-width: 80rem;
@@ -146,13 +164,13 @@ body {
         max-width: 30rem;
     }
 }
-    
+
 @media screen and (max-width: 868px) {
     .blog-post {
         max-width: 70rem;
     }
 }
-    
+
 @media screen and (max-width: 768px) {
     .blog-post {
         padding: 2.5rem;
@@ -164,7 +182,7 @@ body {
         transform: translate(0, -8rem);
     }
 }
-    
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +273,7 @@ body {
     /*color: white;*/
     font-weight: bold;
 }
-  
+
 .cardInfo {
     font-size: 15px;
     /*text-shadow: 4px 4px 10px black;*/
@@ -292,7 +310,7 @@ footer {
     padding-top: 10px;
     width: 100%;
     color: white;
-    bottom: 0; 
+    bottom: 0;
     position: relative;
 }
   
@@ -311,13 +329,13 @@ footer {
     margin-bottom: 0;
     list-style: none;
 }
-  
+
 .social-icons li {
     display: inline-block;
     margin-bottom: 4px;
     width: 100%;
 }
-  
+
 .social-icons li.title {
     margin-right: 15px;
     text-transform: uppercase;
@@ -325,7 +343,7 @@ footer {
     font-weight: 700;
     font-size: 13px;
 }
-  
+
 .social-icons a {
     background-color: #DCDCDC;
     color: #000000;
@@ -339,33 +357,33 @@ footer {
     border-radius: 100%;
     transition: all 0.2s linear;
 }
-  
+
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
     color: #fff;
     background-color: #29aafe;
 }
-  
+
 .social-icons .size-sm a {
     line-height: 34px;
     height: 34px;
     width: 34px;
     font-size: 14px;
 }
-  
+
 .social-icons a.facebook:hover {
     background-color: #3b5998;
 }
-  
+
 .social-icons a.twitter:hover {
     background-color: #00aced;
 }
-  
+
 .social-icons a.linkedin:hover {
     background-color: #007bb6;
 }
-  
+
 .social-icons a.instagram:hover {
     background-color: #bc2a8d;
 }
@@ -377,7 +395,6 @@ footer {
 .contact p {
     color: #DCDCDC;
 }
-
 
 .bg-home {
     position: relative;
