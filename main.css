@@ -124,7 +124,7 @@ body {
     box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
     border-radius: .8rem;
 }
-    
+
 .blog-post__title {
     font-size: 2.5rem;
     margin: 1.5rem 0 2rem;
@@ -199,6 +199,7 @@ body {
     display: inline-block;
 }
 
+
 /* Title Content */
 
 .mainTitle {
@@ -209,11 +210,11 @@ body {
     font-weight: bold;
     /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);*/
 }
-  
+
 #title1 {
     color: #474343;
 }
-  
+
 .titleInfo {
     text-align: center;
     font-style: normal;
@@ -222,14 +223,17 @@ body {
     color: #C73A26;
     margin-top: -5px;
 }
-  
+
 .titleContent {
     margin-bottom: 80px;
 }
-  
+
+
 /* End of Title Content */
 
+
 /* Program Card */
+
 .program-card {
     background: linear-gradient(120deg, #C73A26, #DD7737, #DCC9A1, #085174);
     box-shadow: 5px 5px 15px #313131;
@@ -237,14 +241,14 @@ body {
     position: relative;
     display: grid;
 }
-  
+
 .program-card img {
     border-radius: 36px;
     transform: scale(0.97) translateY(-35px);
     box-shadow: 0px 4px 17px 5px rgba(32, 32, 32, 0.5);
     transition: 0.5s;
 }
-  
+
 .card-detail {
     /*color: white;*/
     text-align: center;
@@ -254,18 +258,19 @@ body {
     margin: 40px 40px 5px;
     transition: opacity 0.5s linear;
 }
-  
-.program-card:hover .programImg {
+
+
+/* .program-card:hover .programImg {
     transform: scale(0) ;
-}
-  
+} */
+
 .program-card:hover .card-detail {
-    opacity: 1;
+    /* opacity: 1; */
     /*color: white;*/
-    text-align: center;
+    /* text-align: center; */
     /* font-weight: bold; */
 }
-  
+
 .cardTitle {
     font-size: 40px;
     margin-bottom: 20px;
@@ -293,15 +298,17 @@ body {
     transition: 0.3s;
     transform: translateY(-20px);
 }
-  
+
 .watch-btn:hover {
     box-shadow: 1px 1px 17px 6px #363636;
     color: white;
 }
-  
+
 .program-card:hover .watch-btn {
     transform: translateY(-20px);
 }
+
+
 /* end of program */
 
 footer {
@@ -313,7 +320,7 @@ footer {
     bottom: 0;
     position: relative;
 }
-  
+
 .social-icons a {
     width: 40px;
     height: 40px;
