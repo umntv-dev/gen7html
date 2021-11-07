@@ -183,6 +183,33 @@ body {
     }
 }
 
+@media (min-width: 0px) {
+    .blog-post__text {
+        font-size: 1rem;
+    }
+    .oxygenImg {
+        width: 25vw !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .blog-post__text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .oxygenImg {
+        width: 18vw !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .oxygenImg {
+        width: 12vw !important;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -420,4 +447,13 @@ footer {
 .tv {
     width: 60%;
     align-items: center;
+}
+
+.oxygen {
+    width: 180px;
+}
+
+.oxygenImg {
+    width: 15vw;
+    height: auto;
 }
